@@ -938,12 +938,12 @@
 }
 
 // Animation with CSS3 keyframes
-@mixin doAnim($name,$duration:1,$easing:linear,$delay:0s,$iteration:infinite) {
-    -webkit-animation: $name $duration $easing $delay $iteration normal;
-       -moz-animation: $name $duration $easing $delay $iteration normal;
-        -ms-animation: $name $duration $easing $delay $iteration normal;
-         -o-animation: $name $duration $easing $delay $iteration normal;
-            animation: $name $duration $easing $delay $iteration normal;
+@mixin doAnim($name,$duration:1,$easing:linear,$delay:0s,$iteration:infinite,$endState:normal) {
+    -webkit-animation: $name $duration $easing $delay $iteration $endState;
+       -moz-animation: $name $duration $easing $delay $iteration $endState;
+        -ms-animation: $name $duration $easing $delay $iteration $endState;
+         -o-animation: $name $duration $easing $delay $iteration $endState;
+            animation: $name $duration $easing $delay $iteration $endState;
 }
 
 @mixin animation($animate...) {

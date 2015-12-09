@@ -1058,3 +1058,8 @@
   font-size: $size;
   font-size: calculateRem($size);
 }
+
+@mixin call-nth($prop,$var,$index,$unity : px)
+{
+    #{$prop}: #{nth($var,$index)}$unity;
+}

@@ -907,9 +907,19 @@
     position:               absolute;
     top:                    $top;
 }
+@mixin absl($left,$top) {
+    left:                   $left;
+    position:               absolute;
+    top:                    $top;
+}
 
 // Absolute left
 @mixin absoluteRight($right,$top) {
+    position:               absolute;
+    right:                  $right;
+    top:                    $top;
+}
+@mixin absr($right,$top) {
     position:               absolute;
     right:                  $right;
     top:                    $top;

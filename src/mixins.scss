@@ -924,7 +924,8 @@
     right:                  $right;
     top:                    $top;
 }
-@mixin absall($left,$top,$right,$bottom) {
+
+@mixin absAll($left,$top,$right,$bottom) {
     bottom:                 $bottom;
     left:                   $left;
     position:               absolute;
